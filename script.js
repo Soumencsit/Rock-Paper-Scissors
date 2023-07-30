@@ -61,7 +61,7 @@ function resultPaper(playerMovement){
         }
     }
 
-    else if(computerMovement==='paper'){
+    else if(playerMovement==='paper'){
         
         cp=computerMovement();
         if(cp==='paper'){
