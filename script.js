@@ -28,7 +28,31 @@ function computerMovement(){
 
 function resultPaper(playerMovement){
 
-    if(playerMovement==='scissor'){
+    
+    if(playerMovement==='paper'){
+        
+        cp=computerMovement();
+        if(cp==='paper'){
+            result='tie';
+        }
+        else if(cp==='rock'){
+            result='you won';
+        }
+        else{
+            result='compuer won';
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    else if(playerMovement==='scissor'){
         cp=computerMovement();
       
 
@@ -61,23 +85,15 @@ function resultPaper(playerMovement){
         }
     }
 
-    else if(playerMovement==='paper'){
-        
-        cp=computerMovement();
-        if(cp==='paper'){
-            result='tie';
-        }
-        else if(cp==='rock'){
-            result='you won';
-        }
-        else{
-            result='compuer won';
-        }
-    }
 
     alert(`computer put ${cp} and you put ${playerMovement} so ${result}`);
 
 }
+
+
+           
+
+
 
 
            
